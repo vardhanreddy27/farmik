@@ -1,0 +1,68 @@
+/* Import Satoshi Font */
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700&display=swap');
+
+/* Tailwind Import */
+@import "tailwindcss";
+
+/* Color Variables */
+:root {
+  --main-bg: #F9F8F4;               /* Coconut White */
+  --button-primary: #007F5F;        /* Farmik Green */
+  --button-hover: #00624A;          /* Darker shade for hover */
+  --button-text: #ffffff;           /* White */
+  --accent-color: #6E4F32;          /* Earth Brown */
+  --highlight: #C49A6C;             /* Organic Gold */
+  --text-primary: #2C2C2C;          /* Soil Black */
+  --card-bg: #E4DCCF;               /* Natural Beige */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-bg: #1A1A1A;
+    --button-primary: #37984C;
+    --button-hover: #2D7A3E;
+    --button-text: #ffffff;
+    --text-primary: #f5f5f5;
+    --card-bg: #2C2C2C;
+  }
+}
+
+body {
+  background-color: var(--main-bg);
+  color: var(--text-primary);
+  font-family: 'Satoshi', system-ui, sans-serif;
+}
+
+/* button {
+  background-color: var(--button-primary);
+  color: var(--button-text);
+  padding: 0.5rem 1rem;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+} */
+
+/* button:hover {
+  background-color: var(--button-hover);
+}
+
+button:disabled {
+  background-color: #CCCCCC;
+  cursor: not-allowed;
+} */
+
+/* Tailwind Directives */
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
