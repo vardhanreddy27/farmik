@@ -10,19 +10,19 @@ const imageColumns = [
 
 export default function HeroShowcase() {
   return (
-    <section className="w-full px-10 py-8 flex flex-col md:flex-row items-center justify-between">
+    <section className="w-full px-6 sm:px-8 md:px-10 py-10 flex flex-col md:flex-row items-center justify-between">
       {/* Left Text */}
-      <div className="md:w-1/2 mb-12 md:mb-0">
+      <div className="md:w-1/2 mb-10 md:mb-0 text-center md:text-left">
         <p className="text-sm text-green-700 font-medium mb-2">
           Nourish Your Life, Naturally 🌿
         </p>
-        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4">
-          Premium Superfoods <br /> Backed by Science & Tradition
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4">
+          Premium Superfoods <br className="hidden sm:block" /> Backed by Science & Tradition
         </h1>
-        <p className="text-gray-600 text-base md:text-lg mb-6">
+        <p className="text-gray-600 text-base sm:text-lg mb-6">
           Explore Farmik’s curated range of healthy cereals, snacks, and wellness blends – crafted from ancient grains, powered by modern nutrition, and certified for purity.
         </p>
-        <div className="flex gap-4">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
           <button className="bg-[var(--button-primary)] text-white px-6 py-3 rounded-full transition-all">
             Explore Products
           </button>
@@ -32,8 +32,8 @@ export default function HeroShowcase() {
         </div>
       </div>
 
-      {/* Right Grid with Vertically Centered Columns */}
-      <div className="md:w-1/2 flex gap-4 justify-end min-h-[400px]">
+      {/* Right Grid */}
+      <div className="md:w-1/2 flex gap-4 justify-center md:justify-end min-h-[300px]">
         {imageColumns.map((column, colIndex) => (
           <div
             key={colIndex}
@@ -42,7 +42,7 @@ export default function HeroShowcase() {
             {column.map((src, imgIndex) => (
               <div
                 key={imgIndex}
-                className="w-44 h-28 relative rounded-xl overflow-hidden shadow-md"
+                className="w-32 h-20 sm:w-36 sm:h-24 md:w-44 md:h-28 relative rounded-xl overflow-hidden shadow-md"
               >
                 <Image
                   src={src}
@@ -50,6 +50,7 @@ export default function HeroShowcase() {
                   layout="fill"
                   objectFit="cover"
                   className="rounded-xl"
+                  priority
                 />
               </div>
             ))}

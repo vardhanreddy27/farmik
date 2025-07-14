@@ -3,8 +3,8 @@
 export default function CategorySlider() {
   const categories = [
     {
-      label: "Speciality Flours",
-      image: "https://nourishyou.in/cdn/shop/files/Specialty_Flour_1_750120cc-d36b-4d2a-9bd0-5b267e59e17e_335x335.png?v=1744909186",
+      label: "Breakfast Cereals",
+      image: "/Breakfastcereals.webp",
       bg: "bg-[#E0F4F1]",
       textBg: "bg-[#5CA7AC]",
     },
