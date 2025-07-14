@@ -1,6 +1,7 @@
 'use client';
 import { Mail, Phone, MapPin, MessageSquare, AtSign, Headset } from 'lucide-react';
-import { FaWhatsapp } from 'react-icons/fa';
+import { FaWhatsapp } from 'react-icons/fa'; // ✅ Add this line
+
 
 export default function ContactSection() {
   return (
@@ -9,10 +10,11 @@ export default function ContactSection() {
         <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4">
           Get In Touch
         </h2>
-        <p className="text-center text-[var(--text-primary)] max-w-2xl mx-auto mb-12">
-          Whether you're interested in our superfoods, wholesale partnerships, or just want to say hi — 
-          we're always happy to connect!
-        </p>
+       <p className="text-center text-[var(--text-primary)] max-w-2xl mx-auto mb-12">
+  Whether you&apos;re interested in our superfoods, wholesale partnerships, or just want to say hi — 
+  we&apos;re always happy to connect!
+</p>
+
    <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
           <div className="bg-white shadow-lg p-6 rounded-xl text-center">
             <MessageSquare size={32} className="mx-auto mb-3 text-purple-700" />

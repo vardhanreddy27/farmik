@@ -1,5 +1,7 @@
 'use client';
 
+import Image from 'next/image';
+
 export default function CategorySlider() {
   const categories = [
     {
@@ -39,19 +41,19 @@ export default function CategorySlider() {
       <h2 className="text-3xl md:text-4xl font-bold text-center">Our Collection</h2>
       <p className="text-center text-[#444] text-lg mt-1 font-semibold">you’ll want them all!</p>
 
-      {/* Grid of Cards */}
       <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
         {categories.map((cat, index) => (
           <div
             key={index}
             className={`rounded-2xl shadow-lg ${cat.bg} flex flex-col justify-between overflow-hidden group`}
           >
-            <div className="relative overflow-hidden h-[250px]">
-              <img
+            <div className="relative h-[250px] w-full">
+              <Image
                 src={cat.image}
                 alt={cat.label}
-                draggable={false}
-                className="object-cover w-full h-full transition-transform duration-500 ease-in-out group-hover:scale-105"
+                fill
+                sizes="(max-width: 768px) 100vw, 250px"
+                className="object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
               />
             </div>
             <div className={`h-[60px] flex items-center justify-center text-center font-bold text-white text-sm ${cat.textBg}`}>

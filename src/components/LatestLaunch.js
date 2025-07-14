@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import React, { useEffect, useRef, useState } from 'react';
 import {
   motion,
@@ -100,6 +101,7 @@ export default function LatestLaunch() {
   const headingRef = useRef(null);
 
   useEffect(() => {
+    if (typeof window === 'undefined') return;
     const split = new SplitType('#launch-heading', { types: 'words' });
     gsap.set('#launch-heading', { opacity: 1 });
     gsap.set('.word', { y: 100, opacity: 0 });
@@ -165,6 +167,7 @@ export default function LatestLaunch() {
         <h2 className="text-3xl md:text-4xl font-bold">Latest Launch</h2>
         <p className="text-gray-500 mt-1 pb-8 text-sm">Explore our top-performing, family-loved innovations.</p>
       </div>
+
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-10 lg:gap-16 pl-3">
         <div className="flex-1 text-center lg:text-left">
           <h1
@@ -210,6 +213,8 @@ export default function LatestLaunch() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
+            role="dialog"
+            aria-modal="true"
           >
             <motion.div
               onClick={(e) => e.stopPropagation()}
@@ -224,17 +229,18 @@ export default function LatestLaunch() {
               >
                 <X size={20} />
               </button>
-              <img
-                src={selectedItem.image}
-                alt={selectedItem.title}
-                className="w-full mt-4 h-60 object-cover rounded-xl mb-4"
-              />
-              <h2 className="text-xl font-semibold mb-2 text-gray-800">
-                {selectedItem.title}
-              </h2>
-              <p className="text-sm italic text-[var(--button-primary)] mb-2">
-                {selectedItem.tagline}
-              </p>
+              <div className="w-full relative h-60 rounded-xl mb-4 overflow-hidden">
+                <Image
+                  src={selectedItem.image}
+                  alt={selectedItem.title}
+                  fill
+                  sizes="100%"
+                  className="object-cover rounded-xl"
+                  priority
+                />
+              </div>
+              <h2 className="text-xl font-semibold mb-2 text-gray-800">{selectedItem.title}</h2>
+              <p className="text-sm italic text-[var(--button-primary)] mb-2">{selectedItem.tagline}</p>
               <p className="text-gray-600 text-sm mb-4">
                 <strong>Benefits:</strong> {selectedItem.benefits}
               </p>
