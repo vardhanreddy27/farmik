@@ -10,8 +10,8 @@
   --button-primary: #007F5F;        /* Farmik Green */
   --button-hover: #00624A;          /* Darker shade for hover */
   --button-text: #ffffff;           /* White */
-  --accent-color: #6E4F32;          /* Earth Brown */
-  --highlight: #C49A6C;             /* Organic Gold */
+  --accent-color: #007F5F;         /* Earth Brown */
+--highlight:  #007F5F; /* Farmik Logo Red */
   --text-primary: #2C2C2C;          /* Soil Black */
   --card-bg: #E4DCCF;               /* Natural Beige */
 }

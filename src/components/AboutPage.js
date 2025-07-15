@@ -1,10 +1,15 @@
 import React from 'react'
+import CompanyStatsSection from './CompanyStatsSection'
+import Certified from './Certified'
+import AboutFarmikSteps from './AboutFarmikSteps'
 
 function AboutPage() {
   return (
-    <div>
-      
-    </div>
+    <>
+      <CompanyStatsSection />
+      <AboutFarmikSteps />
+      <Certified />
+    </>
   )
 }
 

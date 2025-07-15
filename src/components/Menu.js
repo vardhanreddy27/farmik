@@ -26,7 +26,7 @@ export default function Menu() {
         {/* Center: Navigation Links */}
         <nav className="hidden md:flex gap-8 text-[var(--text-primary)] font-medium">
           <Link href="/" className="hover:text-[var(--button-primary)] transition">Home</Link>
-          <Link href="/" className="hover:text-[var(--button-primary)] transition">About</Link>
+          <Link href="/about" className="hover:text-[var(--button-primary)] transition">About</Link>
           <Link href="/" className="hover:text-[var(--button-primary)] transition">Products</Link>
           <Link href="/contact" className="hover:text-[var(--button-primary)] transition">Contact</Link>
         </nav>

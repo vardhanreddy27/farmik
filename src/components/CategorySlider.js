@@ -1,38 +1,49 @@
 'use client';
 
 import Image from 'next/image';
+import { ArrowUpRight } from 'lucide-react';
 
 export default function CategorySlider() {
   const categories = [
     {
       label: "Breakfast Cereals",
-      image: "/Breakfastcereals.webp",
+      image: "/Breakfastcereals.png",
+      headline: "Power Your Mornings Naturally",
       bg: "bg-[#E0F4F1]",
-      textBg: "bg-[#5CA7AC]",
+      textBg: "bg-[#36959A]",
+      arrowBg: "bg-[#36959A]",
     },
     {
-      label: "Breakfast",
-      image: "https://nourishyou.in/cdn/shop/files/Breakfast_2_f7086899-3f1f-436c-bfed-da750c0d3376_335x335.png?v=1744909298",
+      label: "Health Mix",
+      image: "/Healthmixs.png",
+      headline: "Protein & Fiber in Every Scoop",
       bg: "bg-[#FBE9F2]",
-      textBg: "bg-[#942B55]",
+      textBg: "bg-[#8F2A4E]",
+      arrowBg: "bg-[#8F2A4E]",
     },
     {
-      label: "Plant-based Mlk",
-      image: "https://nourishyou.in/cdn/shop/files/Plant-based_Mlk_6f9982ca-f25b-468e-971f-16d21462df9f_335x335.png?v=1748680313",
-      bg: "bg-[#EBE7F6]",
-      textBg: "bg-[#5A2DA6]",
+      label: "Cereal Flakes",
+      image: "/CerealFlakes.png",
+      headline: "Crunchy. Clean. Nutritionally Smart.",
+      bg: "bg-[#EBF7E3]",  // light green
+      textBg: "bg-[#6BAE42]", // green
+      arrowBg: "bg-[#6BAE42]",
     },
     {
-      label: "Dairy-free Alternatives",
-      image: "https://nourishyou.in/cdn/shop/files/Dairy_Free_Alternatives_e19c2697-a2df-4412-8104-13475dfeedd8_335x335.png?v=1744909299",
-      bg: "bg-[#FEF5D5]",
-      textBg: "bg-[#55A6AA]",
+      label: "Porridge",
+      image: "/Porridge.png",
+      headline: "Comfort Food, Reinvented with Millet",
+      bg: "bg-[#FFF1DC]", // light orange beige
+      textBg: "bg-[#E38B29]", // orange
+      arrowBg: "bg-[#E38B29]",
     },
     {
-      label: "Roasted Seeds",
-      image: "https://nourishyou.in/cdn/shop/files/Roasted_Seeds_1_85bb6805-c456-40ac-bcd8-682318b1dad9_335x335.png?v=1744909297",
-      bg: "bg-[#FDE9DD]",
-      textBg: "bg-[#9B6040]",
+      label: "Bars",
+      image: "/Barsnew.png",
+      headline: "Snack Clean. Snack Strong.",
+      bg: "bg-[#FFF4E0]", // soft yellow
+      textBg: "bg-[#D4A016]", // golden yellow
+      arrowBg: "bg-[#D4A016]",
     },
   ];
 
@@ -45,18 +56,33 @@ export default function CategorySlider() {
         {categories.map((cat, index) => (
           <div
             key={index}
-            className={`rounded-2xl shadow-lg ${cat.bg} flex flex-col justify-between overflow-hidden group`}
+            className={`group relative rounded-2xl shadow-md overflow-hidden flex flex-col justify-between transform transition-transform duration-500 ease-in-out hover:scale-105 cursor-pointer ${cat.bg}`}
           >
-            <div className="relative h-[250px] w-full">
+            {/* Image with headline and arrow */}
+            <div className="relative w-full h-[280px] flex flex-col justify-end items-center">
               <Image
                 src={cat.image}
                 alt={cat.label}
-                fill
-                sizes="(max-width: 768px) 100vw, 250px"
-                className="object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
+                width={240}
+                height={240}
+                className="object-contain"
               />
+
+              {/* Headline + Arrow */}
+              <div className="absolute top-5 left-1/2 -translate-x-1/2 text-center">
+                <p className="text-xs font-bold text-[var(--text-primary)] leading-snug">
+                  {cat.headline}
+                </p>
+                <div
+                  className={`mt-2 mx-auto w-6 h-6 rounded-full flex items-center justify-center shadow-md ${cat.arrowBg}`}
+                >
+                  <ArrowUpRight size={14} className="text-white" />
+                </div>
+              </div>
             </div>
-            <div className={`h-[60px] flex items-center justify-center text-center font-bold text-white text-sm ${cat.textBg}`}>
+
+            {/* Bottom Label */}
+            <div className={`w-full text-white text-[15px] font-bold text-center py-4 ${cat.textBg}`}>
               {cat.label}
             </div>
           </div>
