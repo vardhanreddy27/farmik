@@ -3,14 +3,14 @@
 import Image from 'next/image';
 
 const imageColumns = [
-  ['/berryblastwithbg.webp', '/berryblastwithbg.webp'],
-  ['/berryblastwithbg.webp', '/berryblastwithbg.webp', '/berryblastwithbg.webp'],
-  ['/berryblastwithbg.webp', '/berryblastwithbg.webp', '/berryblastwithbg.webp', '/berryblastwithbg.webp'],
+  ['/bfbanner.webp', '/snacksbanner.webp'],
+  ['/both.webp', '/milkshakes.webp', '/barsbg.webp'],
+  ['/chocoballs.webp', '/oats.jpg', '/makanas.webp', '/porridge.webp'],
 ];
 
 export default function HeroShowcase() {
   return (
-    <section className="w-full px-6 sm:px-8 md:px-10 py-10 flex flex-col md:flex-row items-center justify-between">
+    <section className="w-full mt-10 px-6 sm:px-8 md:px-10 py-10 flex flex-col md:flex-row items-center justify-between">
       {/* Left Text */}
       <div className="md:w-1/2 mb-10 md:mb-0 text-center md:text-left">
         <p className="text-sm text-green-700 font-medium mb-2">

@@ -35,10 +35,10 @@ export default function Footer() {
         <div className="flex flex-col items-center md:items-start space-y-2">
           <h4 className="text-md font-semibold">Quick Links</h4>
           <ul className="space-y-1 text-sm">
-            <li><Link href="/about" className="hover:underline">About Us</Link></li>
-            <li><Link href="/products" className="hover:underline">Our Products</Link></li>
-            <li><Link href="/contact" className="hover:underline">Contact</Link></li>
-            <li><Link href="/shop" className="hover:underline">Shop Now</Link></li>
+            <li><Link href="/about" className=" ">About </Link></li>
+            <li><Link href="/" className=" ">Products</Link></li>
+            <li><Link href="/contact" className=" ">Contact</Link></li>
+            <li><Link href="/shop" className="">Shop </Link></li>
           </ul>
         </div>
 

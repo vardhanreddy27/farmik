@@ -43,7 +43,7 @@ export default function ProductCard() {
         {/* Product Image */}
         <div className="flex justify-center">
           <Image
-            src="/darkchoclatemuesli.png"
+            src="/milletmueslichoco.png"
             alt="Mr. Flakes Dark Chocolate Millet Muesli"
             width={320}
             height={400}

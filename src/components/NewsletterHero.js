@@ -37,7 +37,7 @@ export default function NewsletterHero() {
         {/* Right: Mobile UI Image */}
         <div className="relative w-full flex justify-center">
           <Image
-            src="/phone.png"
+            src="/phone.webp"
             alt="Farmik Newsletter Preview"
             width={200}
             height={460}

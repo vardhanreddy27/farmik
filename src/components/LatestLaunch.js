@@ -124,37 +124,42 @@ export default function LatestLaunch() {
 
   const cards = [
     {
-      image: "/berryblastwithbg.webp",
+      image: "/bfbanner.webp",
       title: "Berry Blast Millet Muesli",
       tagline: "Berries. Millets. Perfection.",
       benefits: "Antioxidants · High Fiber · Low Sugar",
     },
     {
-      image: "/chocos.jpg",
+      image: "/snacksbanner.webp",
       title: "Multi-Millet Chocos",
       tagline: "Smart Breakfast, Every Morning",
       benefits: "Gluten-Free · High Protein · No Maida",
     },
     {
-      image: "/cornflake.jpg",
-      title: "Quinoa Curls – Sweet Chilli",
+      image: "/both.webp",
+      title: "Multi Millet Muesli & Millet Chocos",
       tagline: "Snack Clean. Snack Bold.",
-      benefits: "Puffed · Baked · Rich in Fiber",
+      benefits: "Kids Friendly  · Gluten-Free · Rich in Fiber",
     },
     {
-      image: "/bars.webp",
-      title: "Millet Energy Bar – Fruits & Berries",
+      image: "/milkshakes.webp",
+      title: "Super Gains Milkshakes",
       tagline: "Sustained Energy, Naturally",
-      benefits: "Jaggery · Crispies · Clean Label",
+      benefits: "Jaggery ·  Kids Friendly · Clean Label",
     },
     {
-      image: "/healthmix.webp",
-      title: "Nutri Fusion – Vanilla",
+      image: "/barsbg.webp",
+      title: "Meal replacement protien bars",
       tagline: "Power of 12 Super Grains",
       benefits: "High Protein · Kids Friendly · Plant Based",
     },
     {
-      image: "/makana.webp",
+      image: "/chocoballs.webp",
+      title: "Roasted Makhana – Peri Peri",
+      tagline: "Light Snack. Big Crunch.",
+      benefits: "Gluten-Free · Roasted · Low Cal",
+    }, {
+      image: "/oats.jpg",
       title: "Roasted Makhana – Peri Peri",
       tagline: "Light Snack. Big Crunch.",
       benefits: "Gluten-Free · Roasted · Low Cal",
