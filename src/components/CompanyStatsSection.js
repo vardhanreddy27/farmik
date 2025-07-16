@@ -31,7 +31,7 @@ export default function CompanyStatsSection() {
         <div className="h-full flex items-center justify-center">
           <div className="relative w-full h-[400px] rounded-2xl shadow-lg overflow-hidden">
             <Image
-              src="/healthmix.webp"
+              src="/bigbanner.webp"
               alt="Farmik Global Facility"
               fill
               className="object-cover"
