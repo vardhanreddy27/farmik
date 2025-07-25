@@ -39,7 +39,7 @@ function Organic() {
               </h4>
               <p className="text-sm text-gray-700 leading-relaxed">
                 Our farm is currently progressing into Stage 2 of certification
-                under India's National Programme for Organic Production (NPOP).
+                under India&apos;s National Programme for Organic Production (NPOP).
               </p>
             </div>
           </div>
