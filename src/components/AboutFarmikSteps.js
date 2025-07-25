@@ -45,8 +45,8 @@ export default function AboutFarmikSteps() {
           <p className="text-[var(--text-primary)] text-base md:text-lg mb-6 font-satoshi">
             At Farmik, our strength lies in vertically integrated, globally coordinated facilities — delivering high-quality, health-focused nutrition across borders.
           </p>
-          <button className="inline-flex items-center gap-2 px-5 py-3 bg-[var(--button-primary)] text-white rounded-full shadow hover:bg-[var(--button-hover)] transition">
-            Explore Global Capabilities
+          -<button className="inline-flex items-center text-bold bg-green-100 gap-2 px-5 py-3  rounded-full shadow transition">
+            Explore Our Products
             <ArrowUpRight size={18} />
           </button>
         </div>

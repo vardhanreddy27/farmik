@@ -53,19 +53,20 @@ export default function CompanyStatsSection() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 gap-4">
-            {highlights.map((item, index) => (
-              <div
-                key={index}
-                className="bg-[var(--card-bg)] px-4 py-3 rounded-xl shadow-sm border border-gray-200 flex items-start gap-4"
-              >
-                <div className="w-9 h-9 bg-white rounded-full flex items-center justify-center shadow-md shrink-0">
-                  {item.icon}
-                </div>
-                <p className="text-sm text-[var(--text-primary)] font-satoshi">{item.label}</p>
-              </div>
-            ))}
-          </div>
+         <div className="grid grid-cols-1 gap-4">
+  {highlights.map((item, index) => (
+    <div
+      key={index}
+      className="bg-[var(--card-bg)] px-4 py-3 rounded-xl shadow-sm border border-gray-200 flex items-center gap-4"
+    >
+      <div className="w-9 h-9 bg-white rounded-full flex items-center justify-center shadow-md shrink-0">
+        {item.icon}
+      </div>
+      <p className="text-sm text-[var(--text-primary)] font-satoshi leading-snug">{item.label}</p>
+    </div>
+  ))}
+</div>
+
         </div>
       </div>
     </section>
