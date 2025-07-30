@@ -181,7 +181,7 @@ export default function LatestLaunch() {
             className="text-3xl md:text-5xl font-bold leading-tight mb-4 text-gray-900 overflow-hidden opacity-0"
           >
             New from <br />
-            <span className="text-[var(--button-primary)]">Farmik Superfoods</span> Where Clean Ingredients Meet Real Taste.
+            <span className="text-[var(--button-primary)]">Farmik Superfoods</span> Powered by Nature. Crafted for Wellness.
           </h1>
           <p className="text-gray-600 mt-2 max-w-xl mx-auto lg:mx-0 text-base md:text-lg">
             Healthy Eating, Now Deliciously Simple.

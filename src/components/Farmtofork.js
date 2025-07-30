@@ -25,11 +25,11 @@ export default function Farmtofork() {
           </span>
 
           <h2 className="text-xl md:text-2xl font-semibold mt-1 text-[var(--text-primary)] font-satoshi leading-relaxed">
-            A Certified Journey from Nature to Nourishment
+        From farm to your plate
           </h2>
 
           <p className="text-sm text-[var(--text-primary)] font-satoshi leading-relaxed">
-            Every Farmik product travels a trusted path — from organic fields to your fork — preserving purity, nutrition, and sustainability at each step.
+            Every Farmik product travels a trusted path — from farm to your fork — preserving purity, nutrition, and sustainability at each step.
           </p>
 
           <div className="grid grid-cols-1 gap-3 pt-2">

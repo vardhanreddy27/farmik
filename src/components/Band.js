@@ -10,11 +10,11 @@ const Band = () => {
       icon: <ShieldCheck className="w-7 h-7 text-[#004C3F]" />,
     },
     {
-      label: "No Artificial Flavors",
+      label: "Superfoods power",
       icon: <Sparkles className="w-7 h-7 text-[#004C3F]" />,
     },
     {
-      label: "No Additives",
+      label: "Smart Energy",
       icon: <Droplet className="w-7 h-7 text-[#004C3F]" />,
     },
     {
